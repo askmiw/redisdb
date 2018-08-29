@@ -10,9 +10,9 @@ db.save(user); //保存
 
 //查询 
 List<User> list = db
-				.has("name", "hello world") //查询姓名为 hello world的记录
-				.execQuery(User.class);
+	.has("name", "hello world") //查询姓名为 hello world的记录
+	.execQuery(User.class);
 for (User o : list) {
-			System.out.println(o);
+	System.out.println(o);
 }
 ```
